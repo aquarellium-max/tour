@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Резиденция 17 — тур 360°</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+<link rel="stylesheet" href="vendor/pannellum.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <section class="pane" id="pane" aria-label="Панорама">
+    <div id="pano"></div>
+    <div class="empty" id="empty">
+      <p class="empty-title">Выберите точку на плане</p>
+      <p>Цифры — комнаты, буквы — съёмка на улице.</p>
+    </div>
+    <div class="error" id="error" hidden></div>
+    <div class="caption" id="caption" hidden>
+      <span class="caption-num" id="captionNum"></span>
+      <span class="caption-name" id="captionName"></span>
+    </div>
+    <div class="pane-ctrls">
+      <button class="ctrl" id="prevBtn" type="button" aria-label="Предыдущая точка" hidden>‹</button>
+      <button class="ctrl" id="nextBtn" type="button" aria-label="Следующая точка" hidden>›</button>
+      <button class="ctrl" id="fsBtn" type="button" aria-label="На весь экран" hidden>⛶</button>
+    </div>
+  </section>
+  <section class="side">
+    <header class="head">
+      <h1 id="title">Резиденция 17</h1>
+      <nav class="tabs" id="tabs" aria-label="План"></nav>
+    </header>
+    <div class="plan-wrap">
+      <div class="plan" id="plan">
+        <img id="planImg" alt="">
+        <div class="dots" id="dots"></div>
+      </div>
+    </div>
+  </section>
+</div>
+<script src="vendor/pannellum.js"></script>
+<script src="tour-config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
